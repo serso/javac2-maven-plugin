@@ -1,11 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.electriccloud</groupId>
-  <artifactId>javac2-maven-plugin</artifactId>
-  <version>1.0.2</version>
+  <groupId>org.solovyev.external.com.electriccloud</groupId>
+  <artifactId>org.solovyev.external.javac2-maven-plugin</artifactId>
+  <version>1.0.3</version>
   <packaging>maven-plugin</packaging>
 
   <name>Javac2 Maven Plugin</name>
@@ -22,6 +28,12 @@
       <url>http://www.opensource.org/licenses/MIT</url>
     </license>
   </licenses>
+
+  <scm>
+    <connection>scm:git:git@github.com:serso/javac2-maven-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:serso/javac2-maven-plugin.git</developerConnection>
+    <url>http://github.com/serso/common</url>
+  </scm>
 
   <prerequisites>
     <maven>3.0.4</maven>
@@ -118,32 +130,35 @@
   </build>
 
   <dependencies>
+
     <dependency>
       <groupId>asm</groupId>
       <artifactId>asm</artifactId>
       <version>3.3.1</version>
     </dependency>
+
     <dependency>
       <groupId>asm</groupId>
       <artifactId>asm-commons</artifactId>
       <version>3.3.1</version>
     </dependency>
+
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-core</artifactId>
       <version>${maven.version}</version>
     </dependency>
+
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
       <version>${maven.version}</version>
     </dependency>
 
-    <!-- Must be installed manually, see misc/libs/annotations.jar and README -->
     <dependency>
       <groupId>com.intellij</groupId>
       <artifactId>annotations</artifactId>
-      <version>11.1.2</version>
+      <version>12.0</version>
     </dependency>
 
     <!-- Must be installed manually, see misc/libs/javac2.jar and README -->
@@ -152,16 +167,19 @@
       <artifactId>javac2</artifactId>
       <version>11.1.2</version>
     </dependency>
+
     <dependency>
       <groupId>org.apache.ant</groupId>
       <artifactId>ant</artifactId>
       <version>1.8.4</version>
     </dependency>
+
     <dependency>
         <groupId>br.com.ingenieux.maven.annomojo</groupId>
         <artifactId>org.jfrog.maven.maven-plugin-tools-anno</artifactId>
         <version>1.4.1</version>
     </dependency>
+
   </dependencies>
 
 </project>
