@@ -20,6 +20,14 @@
     <maven.version>3.0.4</maven.version>
   </properties>
 
+  <repositories>
+    <repository>
+      <id>in-project-repository</id>
+      <name>In Project Repo</name>
+      <url>file://${project.basedir}/maven-repository</url>
+    </repository>
+  </repositories>
+
   <licenses>
     <license>
       <name>The MIT License</name>
