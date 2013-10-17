@@ -9,7 +9,7 @@
 
   <groupId>org.solovyev.external.com.electriccloud</groupId>
   <artifactId>org.solovyev.external.javac2-maven-plugin</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <name>Javac2 Maven Plugin</name>
@@ -39,7 +39,7 @@
     <connection>scm:git:git@github.com:serso/javac2-maven-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:serso/javac2-maven-plugin.git</developerConnection>
     <url>http://github.com/serso/common</url>
-    <tag>release-1.0.4</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <prerequisites>
